@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>User Dashboard | Google Auth Demo</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Dashboard | Revision App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="dashboard-container">
     <div class="user-info">
       <span id="username"></span>
-      <img id="userpic" alt="Profile" style="width:40px; height:40px; border-radius:50%; margin-left:15px;">
+      <img id="userpic" alt="Profile" style="width:40px;height:40px;border-radius:50%;margin-left:15px;">
       <button onclick="logout()" class="bw-btn mini">Logout</button>
     </div>
     <div class="main-content">
-      <h2>Dashboard</h2>
-      <p>You are logged in with Google!</p>
-      <div id="userinfo">
-        <p><strong>Name:</strong> <span id="displayName"></span></p>
-        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
-        <p><strong>ID:</strong> <span id="displayId"></span></p>
-      </div>
+      <h2>Subjects</h2>
+      <form id="subjectForm">
+        <input type="text" id="subjectName" placeholder="Subject name" required>
+        <input type="color" id="subjectColor" value="#000000">
+        <button type="submit">Add Subject</button>
+      </form>
+      <ul id="subjectsList"></ul>
+      <!-- Topics/Review sections unchanged -->
     </div>
   </div>
   <script src="script.js"></script>
